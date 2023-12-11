@@ -1,0 +1,69 @@
+<<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:background="@color/BG">
+
+    <Button
+        android:id="@+id/jugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/textColor"
+        android:onClick="jugar"
+        android:text="Jugar"
+        android:textColor="@color/textColor2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <Button
+        android:id="@+id/ajustes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="ajustes"
+        android:text="Ajustes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jugar"
+        android:backgroundTint="@color/textColor"
+        android:textSize="16sp"
+        android:textColor="@color/textColor2"/>
+
+    <Button
+        android:id="@+id/misPartidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/textColor"
+        android:onClick="misPartidas"
+        android:text="Mis Partidas"
+        android:textColor="@color/textColor2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajustes" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/textColor"
+        android:onClick="info"
+        android:text="Ranking"
+        android:textColor="@color/textColor2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/jugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
